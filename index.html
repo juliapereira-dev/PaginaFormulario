@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+
+    <title>Formulário</title>
+
+</head>
+
+<body>
+
+    <div class="div-principal">
+
+        <div class="div-esquerda">
+
+            <h1>Se junte a nossa creche <br>de quatro patas!</h1>
+
+            <img class="imagem" src="imagens/Dog paw-amico.svg" alt="Cachorros">
+
+        </div>
+
+        <div class="div-direita">
+
+            <form class="card">
+
+                <div>
+                    <h1>Cadastro</h1>
+                    <p>Insira as informações de seu bichinho</p>
+                </div>
+                
+                    <div class="campo-texto">
+                        <label>Nome do animal:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+
+              
+                    
+                    <div class="campo-idade">
+                        <label>Idade do animal (anos):</label>
+                        <input type="number" name="idade" id="idade">
+                    </div>
+
+
+                    <div class="campo-especie">
+                        <label>Qual a espécie do animal?</label>
+
+                        <label>
+                            <input type="radio" name="especie" value="canina">Canina
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="especie" value="felina">Felina
+                        </label>
+
+                    </div>
+
+                    <div class="campo-porte">
+                        <label>Qual o porte do animal?</label>
+                        <select name="porte" id="porte">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Pequeno</option>
+                            <option>Médio</option>
+                            <option>Grande</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="campo-texto">
+                        <label>Email do responsável:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    
+                    <button class="btn-enviar">Enviar</button>
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

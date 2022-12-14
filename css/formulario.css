@@ -1,0 +1,273 @@
+body {
+    margin: 0%;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.div-principal {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    height: 100vh;
+    background-color: #7978FF;
+}
+
+.div-esquerda {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-esquerda h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: #1D1CE5;
+    font-size: 40px;
+}
+
+.div-direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.imagem {
+    width: 60%;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+
+    padding-right: 100px;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 10px;
+    background-color: #4649FF;
+    box-shadow: 0px 10px 40px #424242;
+}
+
+.card h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: #dcb1ff;
+    font-size: 45px;
+}
+
+.card p {
+    font-family: 'Work Sans', sans-serif;
+    color: #ca89ff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.campo-texto {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100%;
+    
+}
+
+.campo-texto label {
+    font-family: 'Work Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    
+}
+
+.campo-texto input {
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-family: 'Work Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    font-size: 15px;
+    width: 100%;
+    background-color:#9b9bff;
+    box-shadow: 0px 10px 30px #424242;
+}
+
+.campo-idade {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.campo-idade label {
+    font-family: 'Work Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.campo-idade input {
+    width: 12%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color:#9b9bff;
+    box-shadow: 0px 10px 30px #424242;
+    font-family: 'Work Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+
+.campo-especie {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 18px 0px;
+    width: 100%;
+}
+
+.campo-especie label {
+    font-family: 'Work Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.campo-porte {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0px ;
+}
+
+.campo-porte label {
+    font-family: 'Work Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.campo-porte select {
+    background-color: #9b9bff;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    box-shadow: 0px 10px 30px #424242;
+    outline: none;
+    border: none;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.campo-porte option {
+    font-family: 'Work Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.btn-enviar {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    background-color: #1D1CE5;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0px 10px 30px #424242;
+    outline: none;
+    border: none;
+
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 25px;
+    font-weight: 700;
+    color: #ca89ff;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ca89ff;
+    color: #1D1CE5;
+}
+
+@media only screen and (max-width:950px){
+    .card {
+        width: 90%;
+       
+    }
+
+    .card h1 {
+        font-size: 30px;
+    }
+
+    .div-principal {
+        flex-direction: column;
+        background-color: #9b9bff;
+    }
+
+   
+}
+
+
+@media only screen and (max-width: 600px){
+    .div-principal {
+        flex-direction: column;
+    }
+
+    .div-esquerda h1 {
+        display: none;
+    }
+
+    .div-esquerda {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .div-direita {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card h1 {
+        
+        font-size: 40px;
+    }
+
+    .card p {
+        display: none;
+    }
+}
